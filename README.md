@@ -16,3 +16,13 @@
 - [Ejercicio-8 ](./tp_2/ej_8.py)
 
 - [Ejercicio-9 ](./tp_2/ej_9.py)
+
+<br>
+
+# TP-3
+
+- [Ejercicio-1 ](./tp_3/ej_1.py)
+
+- [Ejercicio-2 ](./tp_2/ej_2.py)
+
+- [Ejercicio-3 ](./tp_2/ej_3.py)
