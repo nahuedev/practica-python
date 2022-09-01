@@ -6,7 +6,15 @@ también sean divisibles por 400. Por ejemplo, 1900 no fue bisiesto pero sí el
 
 anio  = int(input('Ingese un año para saber su caracteristica: '))
 
-if(anio % 4 == 0 and anio % 100 == 0 and anio % 400 == 0 ):
-    print('El año ingresado es bisiesto')
+""" if((anio % 4 != 0 and anio % 100 != 0) or anio % 400 != 0  ):
+    print('El año ingresado no es bisiesto')
+else:
+    print('El año ingresado  es bisiesto')
+     """
+
+
+
+if(not anio % 4 and (anio % 100 or not anio % 400)):
+        print('bisiesto')
 else:
     print('El año ingresado no es bisiesto')

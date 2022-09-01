@@ -7,6 +7,7 @@ cuadernación que incrementa el costo en otros $336. Desarrollar un programa
 que calcule el costo de un libro dado el número de páginas. """
 
 
+
 COSTO_BASICO = 500
 ADICIONAL_PAGE_ENC = 3.20
 COSTO_ADICIONAL_POR_TELA = 200
@@ -17,11 +18,21 @@ TOPE_MAX_ESPECIAL = 600
 
 total_pages = int(input('Ingrese las pagimas totales del libro: '))
 
-if(total_pages <= TOPE_BASICO):
-    costo_total = (total_pages * ADICIONAL_PAGE_ENC) + COSTO_BASICO
-elif(total_pages > TOPE_BASICO and total_pages > TOPE_MAX_ESPECIAL):
-    costo_total = (total_pages * ADICIONAL_PAGE_ENC) + (COSTO_BASICO + COSTO_ADICIONAL_POR_TELA)
+if(total_pages < 0 ):
+    print('Error')
 else:
-    costo_total = (total_pages * ADICIONAL_PAGE_ENC) + (COSTO_BASICO + COSTO_ADICIONAL_POR_TELA + COSTO_ADICIONAL_ESPECIAL)
+    if(total_pages <= TOPE_BASICO):
+        costo_total = (total_pages * ADICIONAL_PAGE_ENC) + COSTO_BASICO
+    elif(total_pages > TOPE_BASICO and total_pages > TOPE_MAX_ESPECIAL):
+        costo_total = (total_pages * ADICIONAL_PAGE_ENC) + (COSTO_BASICO + COSTO_ADICIONAL_POR_TELA)
+    else:
+        costo_total = (total_pages * ADICIONAL_PAGE_ENC) + (COSTO_BASICO + COSTO_ADICIONAL_POR_TELA + COSTO_ADICIONAL_ESPECIAL)
 
-print('El costo total del trabajo es de : $', costo_total)
+    print('El costo total del trabajo es de : $', costo_total)
+
+
+
+    
+    
+    
+    
